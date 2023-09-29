@@ -141,7 +141,7 @@ services:
         command: redis-server /usr/local/etc/redis/redis.conf
         restart: unless-stopped
         healthcheck:
-            test: ['CMD-SHELL', 'redis-cli -h localhost -p 6380 PING']
+            test: ['CMD-SHELL', 'redis-cli -h localhost -p 6379 PING']
             interval: 1s
             timeout: 30s
         ports:

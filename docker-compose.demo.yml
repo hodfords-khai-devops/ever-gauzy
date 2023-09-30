@@ -232,7 +232,7 @@ services:
         networks:
             - overlay
 
-    webapp:
+    gauzy-webapp:
         container_name: webapp
         image: ghcr.io/ever-co/gauzy-webapp:latest
         environment:
